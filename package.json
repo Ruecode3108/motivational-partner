@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/Ruecode3108/motivational-partner.git"
 },
+"license": "MIT",
   "galleryBanner": {
     "color": "#0D1117",
     "theme": "dark"
