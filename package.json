@@ -1,0 +1,54 @@
+{
+  "name": "MP",
+  "displayName": "motivational-partner",
+  "description": "It is a motivational partner that gives motivation everytime you run your code sometimes roasts you everytime you have an error ,sometimes cry , celebrates",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "viewsContainers": {
+        "activitybar": [
+            {
+                "id": "motivational-partner",
+                "title": "Motivational Partner",
+                "icon": "media/icon.svg"
+            }
+        ]
+    },
+    "views": {
+        "motivational-partner": [
+            {
+                "type": "webview",
+                "id": "motivationalPartner.view",
+                "name": "Bit "
+            }
+        ]
+    },
+    "commands": [
+    
+    {
+    "command": "mp.reset",
+    "title": "Bit: Reset Setup 🔄"
+}
+]
+},
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.120.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
