@@ -4,6 +4,7 @@
   "description": "It is a motivational partner that gives motivation everytime you run your code sometimes roasts you everytime you have an error ,sometimes cry , celebrates",
   "version": "0.0.1",
   "publisher": "RUECODE",
+  "icon": "icon1.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Ruecode3108/motivational-partner.git"
