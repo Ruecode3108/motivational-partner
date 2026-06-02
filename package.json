@@ -3,6 +3,11 @@
   "displayName": "motivational-partner",
   "description": "It is a motivational partner that gives motivation everytime you run your code sometimes roasts you everytime you have an error ,sometimes cry , celebrates",
   "version": "0.0.1",
+  "publisher": "RUECODE",
+  "galleryBanner": {
+    "color": "#0D1117",
+    "theme": "dark"
+},
   "engines": {
     "vscode": "^1.120.0"
   },
