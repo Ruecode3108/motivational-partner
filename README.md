@@ -1,65 +1,51 @@
-# MP README
+# Bit: Your Motivational Coding Buddy 🚀
 
-This is the README for your extension "MP". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+**Bit** is an interactive VS Code sidebar companion designed to ride the emotional roller coaster of software development right alongside you. Whether you are hitting compile on a flawless script or staring down a massive wall of crimson error text, Bit is in your corner—ready to loudly celebrate your victories or brutally roast your bugs.
 
 ---
 
-## Working with Markdown
+## ✨ Features
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+* **Real-Time Code Tracking:** Bit watches your active debug sessions natively from the VS Code sidebar.
+* **Smart Multi-Session Detection:** Specially optimized to handle complex debugging environments (like Node.js parent/child sessions) without triggering false alarms.
+* **Universal Language Support:** Automatically catches runtime crashes, standard error (`stderr`) streams, exceptions, and unhandled promise rejections across Python, JavaScript, C#, C++, and more.
+* **Persistent Personality:** Remembers its settings across editor restarts, with a built-in emergency reset when you need a fresh start.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
+---
 
-## For more information
+## 🛠️ How It Works
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Bit monitors your workspace using three powerful layers of defense:
+1. **The Exit Code Anchor:** If a program exits with anything other than `0`, Bit knows things went sideways.
+2. **The Stream Monitor:** Catches output sent directly to standard error (`stderr`) before the program even has a chance to crash.
+3. **The Exception Catch:** Listens specifically for unhandled exceptions and promise rejections.
 
-**Enjoy!**
+---
+
+## 💻 Commands
+
+This extension contributes the following commands to your command palette:
+
+* `mp.reset`: Clears Bit's stored configuration (name/gender) and resets the sidebar to its default state.
+
+---
+
+## 📦 Manual Installation
+
+If you are installing this extension from a local `.vsix` release file:
+
+1. Open **Visual Studio Code**.
+2. Navigate to the **Extensions** tab (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+3. Click the three dots (`...`) in the top-right corner of the Extensions views container.
+4. Select **Install from VSIX...**
+5. Choose the compiled `motivational-partner-0.0.1.vsix` file.
+
+---
+
+## 🛠️ Development Setup
+
+If you want to clone this repository and modify Bit's reactions or layout locally:
+
+1. Clone the repository:
+```bash
+   git clone [https://github.com/Ruecode3108/motivational-partner.git](https://github.com/Ruecode3108/motivational-partner.git)
